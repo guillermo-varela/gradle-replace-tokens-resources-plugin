@@ -80,6 +80,9 @@ Also it's worth mentioning that on the resources folder any kind of text file wi
 ### How to Apply the Plugin
 Please follow the instructions given at: https://plugins.gradle.org/plugin/com.blogspot.nombre-temp.replace.tokens.resources
 
+### Demo
+https://github.com/guillermo-varela/jetty-jersey-multi-env-plugin-example
+
 ### Customization
 Not only the values inside the values can be overriden, but also:
   - The name of the "**config**" folder containing the deployment environments can be changed adding an extra property to the Gradle project (in the build script before applying this plugin or in the file "gradle.properties") named "**configEnvironmentFolder**".
@@ -95,6 +98,9 @@ defaultEnvironment=dev
 On the example shown there are two files on the resources and on the deployment environment folders. Currently the plugin takes all values from both files on the deployment environment folders and use them to replace all the tokens in the resource files, without making distinction between files.
 
 That means each property must have a unique key for all files, otherwise the values will collide and use wrong values.
+
+### How it was Developed
+A tutorial can be found (in spanish) at: http://nombre-temp.blogspot.com/2015/12/desarrollando-un-plugin-basico-de-grade.html
 
 License
 ----

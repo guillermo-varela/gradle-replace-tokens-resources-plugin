@@ -41,7 +41,7 @@ pluginBundle {
     vcsUrl = 'https://github.com/guillermo-varela/gradle-replace-tokens-resources-plugin'
 
     plugins {
-        greetingsPlugin {
+        replaceTokensResources {
             id = 'com.blogspot.nombre-temp.replace.tokens.resources'
             displayName = 'Gradle Replace Tokens Resources'
             description = 'Adds the ReplaceTokens feature from Ant to the processResources Gradle task'
